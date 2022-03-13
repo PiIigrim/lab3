@@ -10,10 +10,7 @@ int main()
     //3.205-минимум при b=5
     double y, xa = 0, xb, x0, a = 7, b, sh, y1, x1, rnd, i = 1;
     srand(time(NULL));
-    rnd = rand() % 3 - 1;
-    while (rnd == 0) {
-        rnd = rand() % 3 - 1;
-    }
+    rnd = ( - 1.0 + static_cast <float> (rand())) / (static_cast <float> (RAND_MAX / (2.0)));
     cout << "Рандомное число: " << rnd << endl;
     /*x = 3; b = 5; a = 7;*/
     cout << "Введите число b(от 2 до 10): ";
